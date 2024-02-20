@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  margin: 0 auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212024;
+  width: 25%;
+}
+.left .left__image {
+  height: 200px;
+  width: 200px;
+}
+.left .left__name {
+  color: #fff;
+  height: auto;
+  padding: 20px 0px 0px 20px;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 20px;
+}
+.left .left__borderline {
+  align-self: end;
+  background-color: #756f64;
+  width: 90%;
+  height: 2px;
+  margin-top: 10px;
+}
+.left .education {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left .education__perentry {
+  margin-bottom: 10px;
+}
+.left .education__perentry__major {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.left .education__perentry__university {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.left .education__perentry__year {
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+}
+.left .left__flex {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: flex-start;
+}
+.left .left__flex__yellow {
+  background: yellow;
+  height: 30px;
+  width: 30px;
+}
+.left .left__flex__detail {
+  width: 100%;
+  height: auto;
+  background-color: #2b2a30;
+}
+.left .left__flex__detail__child {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.left .left__info {
+  color: #fff;
+  align-self: flex-start;
+  margin-top: 4px;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.right {
+  background-color: #fff;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.right .right__name {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #fecb00;
+  height: 100px;
+}
+.right .right__name__niche {
+  margin-left: 40px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.right .right__name__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.right .right__name__wrapper__heading {
+  margin-left: 4px;
+  font-size: 26px;
+  font-weight: 100;
+}
+.right .right__container {
+  margin-left: 40px;
+  margin-top: 16px;
+}
+.right .right__container__aboutme {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.right .right__container2 {
+  margin-left: 40px;
+  margin-top: 16px;
+}
+.right .right__container2__workexperience {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.right .right__container2__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.right .right__container2__flex__flexcol {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.right .right__container2__flex__flexcol__position {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #969696;
+}
+.right .right__container2__flex__flexcol__company {
+  font-size: 14px;
+  margin-top: -4px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #969696;
+}
+.right .right__container3 {
+  margin-left: 40px;
+  margin-top: 16px;
+}
+.right .right__container3__softwareskills {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.right .right__container3__flex {
+  margin-left: 80px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.right .right__container3__flex__flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-right: 30px;
+}
+
+.hr__color {
+  background-color: #7e7e7e;
+  height: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+  color: #969696;
+  margin-top: 4px;
+}
+
+progress {
+  height: 6px;
+  border: 1px solid gray;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #303032;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=main.css.map */

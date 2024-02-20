@@ -1,0 +1,235 @@
+@import './reset';
+@import './variables';
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name );
+ }
+ @function size($size-name){
+    @return map-get($font-size, $size-name );
+ }
+
+
+
+
+@mixin flexCenter($flex-direction,$justify-content:flex-start,$align-items:stretch){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+.main{
+    @include flexCenter($flex-direction:row);
+    width: auto;
+    margin:0 auto;
+
+}
+.left{
+    @include flexCenter(column, center, center);
+    background-color: $left-box-color;
+    // height:auto;
+    width:25%;
+
+    #{&}__image{
+        height:200px;
+        width: 200px;
+    }
+    #{&}__name{
+        color:$text-color;
+        height:auto;
+        padding:20px 0px 0px 20px;;
+        align-self: flex-start;
+        font-weight: weight(bold);
+        font-size: size(xl);
+    }
+    #{&}__borderline{
+        // @include flexCenter(row, flex-start,flex-start);
+        align-self: end;
+        background-color:$hr-color;
+        width:90%;
+        height:2px;
+        // margin-left:5px;
+        margin-top:10px;
+    }
+
+    .education{
+        margin-top:20px;
+        @include flexCenter(column, center,flex-start);
+        &__perentry{
+            margin-bottom: 10px;;
+            &__major{
+                color:$text-color;
+                font-weight: weight(bold);
+                font-size:size(large)
+            }
+            &__university{
+                color:$text-color;
+                font-weight: weight(medium);
+                font-size:size(medium)
+            }
+            &__year{
+                color:$text-color;
+                font-weight: weight(regular);
+                font-size:size(regular);
+            }
+        }
+    }
+    #{&}__flex{
+        color:$text-color;
+        width:100%;
+        height:auto;
+        @include flexCenter(row, space-between,stretch);
+        align-self: flex-start;
+        &__yellow{
+            background:$side-yellow-color;
+            height: 30px;
+            width:30px;
+        }
+        &__detail{
+            width:100%;
+            height:auto;
+            background-color: $contact-color;
+            &__child{
+                margin-left:20px;
+                font-weight: weight(medium);
+                font-size: size(xl);
+            }
+        }
+    }
+    
+    #{&}__info{
+        color:$text-color;
+        align-self: flex-start;
+        margin-top: 4px;
+       margin-left:30px;
+        font-size: size(medium);
+        font-weight: weight(medium);
+        margin-bottom:8px;
+
+    }
+
+
+
+}
+
+
+.right{
+    background-color: $right-box-color;
+    width:40%;
+    @include flexCenter(column);
+
+    #{&}__name{
+        margin-top:50px;
+        @include flexCenter(column, center,);
+background-color:$right-side-name-sction-color ;
+height:100px;
+        &__niche{
+            margin-left:40px;
+            font-size: size(regular);
+            font-weight: weight(regular)
+        }
+    &__wrapper{
+        @include flexCenter(row,flex-start,center);
+        margin-top:20px;
+        margin-left:40px;
+        &__heading{
+            margin-left:4px;
+            font-size: size(xxl);
+            font-weight: weight(regular);
+        }
+    }
+    
+
+    }
+    #{&}__container{
+        margin-left:40px;
+        margin-top:16px;
+        &__aboutme{
+            font-size: size(medium);
+            color: $about-me-color;
+        }
+    }
+
+    #{&}__container2{
+        margin-left:40px;
+        margin-top:16px;
+        &__workexperience{
+            font-size: size(medium);
+            color: $about-me-color;
+        }
+        &__flex{
+            @include flexCenter(row);
+
+            &__flexcol{
+                margin-left:40px;
+                @include flexCenter(column);
+                &__position{
+                    margin-top:4px;
+                    font-size:size(large);
+                    font-weight: weight(medium);
+                    color:$work-experience-color;
+                }
+                &__company{
+                    font-size:size(medium);
+                    margin-top: -4px;
+                    font-weight: weight(medium);
+                    margin-bottom: 8px;
+                    color:$work-experience-color;
+                }
+            }
+        }
+
+    }
+   
+
+
+
+
+
+
+    #{&}__container3{
+        margin-left:40px;
+        margin-top:16px;
+        &__softwareskills{
+            font-size: size(medium);
+            color: $about-me-color;
+        }
+        &__flex{
+            margin-left:80px;
+            margin-top:30px;
+            @include flexCenter(row);
+            &__flexcol{
+                @include flexCenter(column);
+                margin-right:30px;
+            }
+        }
+    }
+}
+.hr__color{
+    background-color: $hr-right-side;
+    height: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.font-size-18{
+    font-size: 18px;
+    color:$work-experience-color;
+    margin-top:4px;
+}
+progress {
+    height:6px;
+    border: 1px solid gray;
+ }
+ progress::-webkit-progress-bar {
+    background-color: #fff;
+ }
+ progress::-webkit-progress-value {
+    background-color: #303032;;
+ }
+
+ 
+ label{
+    margin-top:5px;
+    margin-bottom:5px;
+ }
